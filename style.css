@@ -2,6 +2,25 @@ html,
 body {
 	margin: 0;
 	font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+}
+
+:root {
+	--title-font-size: 22x;
+	--navfooter-font-size: 17px;
+}
+
+.nfs {
+	font-size: var(--navfooter-font-size);
+}
+
+.tfs {
+	font-size: var(---title-font-size);
+}
+
+.alb {
+	align-items: flex-start;
 }
 
 .fr {
@@ -14,15 +33,85 @@ body {
 	flex-direction: column;
 }
 
+.dg {
+	display: grid;
+}
+
+.gs {
+	gap: 1rem;
+	margin: 0;
+}
+
+.mh {
+	max-height: 2rem;
+}
+
+/*==================Navbar================*/
+
+.nav-container {
+	font-size: var(--navfooter-font-size);
+	margin: 0;
+	padding: 0rem 2rem 0rem 2rem;
+	list-style: none;
+	justify-items: flex-start;
+	align-items: center;
+	color: #fff;
+	background-color: #000;
+}
+
+.ul {
+	list-style: none;
+	gap: 1rem;
+}
+
+.covid,
+.login,
+.products,
+.global {
+	min-width: fit-content;
+}
+
+.wdn {
+	display: none;
+}
+
+nav ul li:hover {
+	background-color: #333333;
+	border-radius: 1.5rem;
+	padding: 0.5rem;
+}
+
+nav ul li {
+	padding: 0.5rem;
+	margin: 0;
+}
+
+nav ul.third {
+	margin-left: auto;
+}
+
+.sign-up {
+	grid-area: sign-up;
+	background-color: #fff;
+	color: #000;
+	border-radius: 1.5rem;
+	padding: 0.5rem;
+	min-width: 3.5rem;
+	text-align: center;
+}
+
+.uber {
+	font-size: 24px;
+}
+
 /*==================Get paid=================*/
 
 .uber-paid-wrap {
 	display: grid;
-	max-width: 60%;
 	position: absolute;
 	background-color: #fff;
 	margin: 7%;
-	padding: 3rem;
+	padding: 2.5rem;
 }
 
 .hdn img {
@@ -78,11 +167,6 @@ body {
 	object-fit: cover;
 }
 
-/* .safety-content .wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-} */
-
 .line-bottom p {
 	border-bottom: 1px solid rgba(51, 51, 51, 0.3);
 }
@@ -118,7 +202,6 @@ footer {
 	grid-template-areas: "header . . ." "company products global travel" "social-icons english . appstores " "inc . . judicial";
 	background-color: #000;
 	color: #fff;
-	gap: 3rem 3rem;
 	padding: 3rem;
 }
 
@@ -130,19 +213,24 @@ i {
 	color: #fff;
 }
 
-.company {
+footer a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.company-title {
 	grid-area: company;
 }
 
-.products {
+.products-title {
 	grid-area: products;
 }
 
-.global {
+.global-title {
 	grid-area: global;
 }
 
-.travel {
+.travel-title {
 	grid-area: travel;
 }
 
@@ -201,6 +289,10 @@ i {
 	.uber-paid-wrap {
 		position: relative;
 		margin: 0;
+		padding: 0;
+	}
+	.dn {
+		display: none;
 	}
 }
 
@@ -209,7 +301,15 @@ i {
 		grid-template-columns: 1fr;
 		grid-template-rows: auto;
 		grid-template-areas: "header" "company" "products" "global" "travel" "social-icons" "english" "appstores" "inc" "judicial";
-		color: yellow;
 		padding: 0.2rem;
+	}
+	.dn {
+		display: none;
+	}
+	.uber-paid-wrap {
+		padding: 0.2rem;
+		width: fit-content;
+		border: 2px solid blue;
+		font-size: 20px;
 	}
 }
