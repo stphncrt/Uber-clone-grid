@@ -1,85 +1,82 @@
 html,
 body {
-    margin: 0;
-    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+	font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .fr {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 .fc {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
-
 
 /*==================Get paid=================*/
 
 .uber-paid-wrap {
-    display: grid;
-    max-width: 60%;
-    position: absolute;
-    background-color: #fff;
-    margin: 7%;
-    padding: 3rem;
+	display: grid;
+	max-width: 60%;
+	position: absolute;
+	background-color: #fff;
+	margin: 7%;
+	padding: 3rem;
 }
 
 .hdn img {
-    width: 100%;
+	width: 100%;
 }
 
 .uber-paid-wrap button {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 500;
-    background-color: #000;
-    width: 12rem;
-    height: 3rem;
+	font-size: 20px;
+	color: #fff;
+	font-weight: 500;
+	background-color: #000;
+	width: 12rem;
+	height: 3rem;
 }
 
 .uber-type {
-    justify-content: space-around;
+	justify-content: space-around;
 }
 
 .icon-wrapper {
-    align-items: center;
-    justify-content: flex-start;
-    width: 3rem;
+	align-items: center;
+	justify-content: flex-start;
+	width: 3rem;
 }
 
 .icon-wrapper p {
-    margin: 0;
+	margin: 0;
 }
 
 .icon-wrapper i {
-    margin: 1rem;
+	margin: 1rem;
 }
-
 
 /*==========safety==============*/
 
 #safety {
-    margin: 0;
-    padding: 0 7% 0 7%;
+	margin: 0;
+	padding: 0 7% 0 7%;
 }
 
 .safety-wrapper {
-    display: grid;
+	display: grid;
 }
 
 .content-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
 }
 
 .safety-wrapper img {
-    max-width: 100%;
-    object-fit: cover;
+	max-width: 100%;
+	object-fit: cover;
 }
-
 
 /* .safety-content .wrapper {
     display: grid;
@@ -87,120 +84,132 @@ body {
 } */
 
 .line-bottom p {
-    border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+	border-bottom: 1px solid rgba(51, 51, 51, 0.3);
 }
-
 
 /* =================Uber businesss===================*/
 
 #uber-for-business {
-    display: grid;
-    background-image: url("https://www.uber-assets.com/image/upload/v1613106985/assets/0e/47aa71-35cb-459a-a975-78c61ea300e2/original/HP-U4B-NYC-bkg.png");
-    padding: 7%;
-    background-size: cover;
+	display: grid;
+	background-image: url("https://www.uber-assets.com/image/upload/v1613106985/assets/0e/47aa71-35cb-459a-a975-78c61ea300e2/original/HP-U4B-NYC-bkg.png");
+	padding: 7%;
+	background-size: cover;
 }
 
 .uber-paid-wrapper button {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 500;
-    background-color: #000;
-    width: 8rem;
-    height: 3rem;
+	font-size: 20px;
+	color: #fff;
+	font-weight: 500;
+	background-color: #000;
+	width: 8rem;
+	height: 3rem;
 }
 
 .uber-paid-wrapper img {
-    width: auto;
+	width: auto;
 }
-
 
 /* ======================footer====================*/
 
 footer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: "header . . ." "company products global travel" "social-icons english . appstores " "inc . . judicial";
-    background-color: #000;
-    color: #fff;
-    gap: 3rem 3rem;
-    padding: 3rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	grid-template-areas: "header . . ." "company products global travel" "social-icons english . appstores " "inc . . judicial";
+	background-color: #000;
+	color: #fff;
+	gap: 3rem 3rem;
+	padding: 3rem;
 }
 
 footer header {
-    grid-area: header;
+	grid-area: header;
 }
 
 i {
-    color: #fff;
+	color: #fff;
 }
 
 .company {
-    grid-area: company;
+	grid-area: company;
 }
 
 .products {
-    grid-area: products;
+	grid-area: products;
 }
 
 .global {
-    grid-area: global;
+	grid-area: global;
 }
 
 .travel {
-    grid-area: travel;
+	grid-area: travel;
 }
 
 .social-icons {
-    grid-area: social-icons;
-    color: #fff;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    align-items: center;
+	grid-area: social-icons;
+	color: #fff;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	align-items: center;
 }
 
 .english {
-    grid-area: english;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+	grid-area: english;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 }
 
 .appstores {
-    grid-area: appstores;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    gap: 1rem;
+	grid-area: appstores;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+	gap: 1rem;
 }
 
 .inc {
-    grid-area: inc;
+	grid-area: inc;
+}
+
+* {
+	border: 1px solid red;
 }
 
 .judicial {
-    grid-area: judicial;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    justify-items: center;
+	grid-area: judicial;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	justify-items: center;
 }
 
 @media (max-width: 1024px) {
-    footer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas: "header . " "company products" " global travel" "social-icons ." " english  appstores " "inc judicial";
-        background-color: #000;
-        color: #fff;
-        gap: 3rem 3rem;
-        padding: 3rem;
-    }
-    .content-wrapper {
-        grid-template-columns: 1fr;
-    }
-    .uber-paid-wrap {
-        position: relative;
-        margin: 0;
-    }
+	footer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas: "header . " "company products" " global travel" "social-icons ." " english  appstores " "inc judicial";
+		background-color: #000;
+		color: #fff;
+		gap: 3rem 3rem;
+		padding: 3rem;
+	}
+	.content-wrapper {
+		grid-template-columns: 1fr;
+	}
+	.uber-paid-wrap {
+		position: relative;
+		margin: 0;
+	}
+}
+
+@media (max-width: 600px) {
+	footer {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: "header" "company" "products" "global" "travel" "social-icons" "english" "appstores" "inc" "judicial";
+		color: yellow;
+		padding: 0.2rem;
+	}
 }
