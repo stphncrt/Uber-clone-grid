@@ -8,6 +8,7 @@ body {
 
 :root {
     --navfooter-font-size: 17px;
+    --primary-font-size: 36px;
 }
 
 .nfs {
@@ -475,6 +476,9 @@ footer h4 {
     .mfc {
         flex-direction: column;
     }
+    .wdn {
+        display: block;
+    }
     #safety {
         margin: 0;
         padding: 0 0.2rem 0 0.2rem;
@@ -515,27 +519,36 @@ footer h4 {
     .sign-up-wrapper i {
         font-size: 1.5rem;
     }
-}
-
-@media (max-width: 600px) {
-    footer {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "header" "company" "products" "global" "travel" "social-icons" "english" "appstores" "inc" "judicial";
-        padding: 0.2rem;
-    }
-    .dn {
-        display: none;
-    }
-    .uber-paid-wrap {
-        padding: 0.2rem;
-        width: fit-content;
-        font-size: 20px;
-    }
-    .uber-paid-wrap h1 {
-        font-size: 36px;
-    }
-    #safety {
-        padding: 0.2rem;
+    @media (max-width: 600px) {
+        footer {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "header" "company" "products" "global" "travel" "social-icons" "english" "appstores" "inc" "judicial";
+            padding: 0.2rem;
+        }
+        .uber-paid-wrap {
+            padding: 0.2rem;
+            width: fit-content;
+            font-size: 20px;
+        }
+        .uber-paid-wrap h1 {
+            font-size: 36px;
+        }
+        #safety {
+            padding: 0.2rem;
+        }
+        .nav-container {
+            justify-content: center;
+        }
+        .third {
+            gap: 0;
+        }
+        .sign-up {
+            padding: 0.4rem;
+            align-self: center;
+        }
+        .sign-up:hover {
+            padding: 0.4rem;
+        }
     }
 }
