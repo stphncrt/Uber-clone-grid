@@ -381,10 +381,6 @@ footer a {
     height: 4rem;
 }
 
-* {
-    border: 1px solid red;
-}
-
 #header-p:hover {
     color: #fff;
     border-bottom: 2px solid #fff;
