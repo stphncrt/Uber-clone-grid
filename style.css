@@ -121,6 +121,7 @@ nav ul.third {
 
 .hdn img {
     width: 100%;
+    margin-bottom: -0.5rem;
 }
 
 .uber-paid-wrap button {
@@ -163,7 +164,7 @@ nav ul.third {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "safety-title ." "img-first img-second" "our setting" "with the" "p-wrapper view";
+    grid-template-areas: "safety-title  safety-title" "img-first img-second" "our setting" "with the" "p-wrapper view";
 }
 
 #safety p {
@@ -180,6 +181,7 @@ nav ul.third {
 
 .img-first {
     grid-area: img-first;
+    margin-right: 1rem;
 }
 
 .img-second {
@@ -215,22 +217,9 @@ nav ul.third {
     display: grid;
 }
 
-
-/* 
-.content-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+#safety img {
+    width: 90%;
 }
-
-.safety-content {
-    display: grid;
-    grid-template-rows: 1fr 0.2fr 0.4fr 0.2fr;
-}
-
-.safety-wrapper img {
-    width: 100%;
-} */
 
 .lb {
     border-bottom: 1px solid rgba(51, 51, 51, 0.3);
@@ -374,9 +363,6 @@ footer h4 {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "safety-title" "img-first" "our" "with" "p-wrapper" "img-second" "setting" " the" " view";
-    }
-    #safety img {
-        width: 100%;
     }
 }
 
