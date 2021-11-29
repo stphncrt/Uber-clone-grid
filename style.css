@@ -160,12 +160,63 @@ nav ul.third {
 #safety {
     margin: 0;
     padding: 0 7% 0 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "safety-title ." "img-first img-second" "our setting" "with the" "p-wrapper view";
+}
+
+#safety p {
+    max-width: 558px;
+}
+
+#safety div {
+    max-width: 558px;
+}
+
+.safety-title {
+    grid-area: safety-title;
+}
+
+.img-first {
+    grid-area: img-first;
+}
+
+.img-second {
+    grid-area: img-second;
+}
+
+.our {
+    grid-area: our;
+}
+
+.setting {
+    grid-area: setting;
+}
+
+.with {
+    grid-area: with;
+}
+
+.the {
+    grid-area: the;
+}
+
+.p-wrapper {
+    grid-area: p-wrapper;
+    gap: 1rem;
+}
+
+.view {
+    grid-area: view;
 }
 
 .safety-wrapper {
     display: grid;
 }
 
+
+/* 
 .content-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -179,7 +230,7 @@ nav ul.third {
 
 .safety-wrapper img {
     width: 100%;
-}
+} */
 
 .lb {
     border-bottom: 1px solid rgba(51, 51, 51, 0.3);
@@ -187,7 +238,7 @@ nav ul.third {
 }
 
 .p-wrapper {
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 
@@ -316,6 +367,17 @@ footer h4 {
     .tfs {
         font-size: 30px;
     }
+    #safety {
+        margin: 0;
+        padding: 0 0.2rem 0 0.2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "safety-title" "img-first" "our" "with" "p-wrapper" "img-second" "setting" " the" " view";
+    }
+    #safety img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -339,8 +401,4 @@ footer h4 {
     #safety {
         padding: 0.2rem;
     }
-}
-
-* {
-    border: 1px solid red;
 }
