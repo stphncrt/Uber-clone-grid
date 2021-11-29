@@ -45,6 +45,10 @@ body {
     margin: 0;
 }
 
+.gm {
+    gap: 2rem;
+}
+
 .mh {
     max-height: 2rem;
 }
@@ -140,7 +144,7 @@ nav ul.third {
 .icon-wrapper {
     align-items: center;
     justify-content: flex-start;
-    width: 3rem;
+    width: 5rem;
 }
 
 .icon-wrapper p {
@@ -254,6 +258,97 @@ nav ul.third {
 }
 
 
+/*==================Download Apps============*/
+
+#download-app {
+    background-color: #f6f6f6;
+    margin: 0;
+}
+
+.download-wrapper {
+    padding: 0 5rem 5rem 6rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.download-wrapper>p {
+    font-size: var(--primary-font-size);
+    color: #333333;
+}
+
+#download-app #first {
+    box-sizing: border-box;
+    width: 7rem;
+    height: 7rem;
+    background-color: #000;
+    color: #fff;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 40px;
+    margin: 1rem 0 1rem 0;
+}
+
+#first h1,
+#first i {
+    padding-left: 0.7rem;
+    margin: 0;
+}
+
+#first h1 {
+    font-weight: 400;
+}
+
+.uber-wrapper {
+    background-color: #f6f6f6;
+}
+
+.download {
+    align-items: center;
+    background-color: #fff;
+    padding: 0 2rem 0 2rem;
+    border: 1px solid rgba(51, 51, 51, 0.3);
+}
+
+.download p {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+
+/*======================Sign up=================*/
+
+#sign-up {
+    padding: 1rem 5rem 1rem 5rem;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.sign-up-wrapper {
+    width: 45%;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.8);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign-up-wrapper h1 {
+    font-size: var(--primary-font-size);
+    font-weight: 500;
+}
+
+.sign-up-wrapper:hover {
+    color: #545454;
+}
+
+.sign-up-wrapper hr {
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.sign-up-wrapper i {
+    font-size: 2rem;
+}
+
+
 /* ======================footer====================*/
 
 footer {
@@ -268,15 +363,36 @@ footer {
 
 footer header {
     grid-area: header;
+    height: 7rem;
 }
 
-i {
+footer i {
     color: #fff;
 }
 
 footer a {
     text-decoration: none;
     color: #fff;
+}
+
+#header-p {
+    padding-bottom: 3rem;
+    height: 4rem;
+}
+
+* {
+    border: 1px solid red;
+}
+
+#header-p:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    font-weight: 400;
+    max-width: fit-content;
+}
+
+footer a:hover {
+    color: #afafaf;
 }
 
 footer h4 {
@@ -356,6 +472,9 @@ footer h4 {
     .tfs {
         font-size: 30px;
     }
+    .mfc {
+        flex-direction: column;
+    }
     #safety {
         margin: 0;
         padding: 0 0.2rem 0 0.2rem;
@@ -363,6 +482,38 @@ footer h4 {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "safety-title" "img-first" "our" "with" "p-wrapper" "img-second" "setting" " the" " view";
+    }
+    .download-wrapper {
+        padding: 0.2rem;
+    }
+    #download-app #first {
+        width: 4rem;
+        height: 4rem;
+        font-size: 30px;
+        margin: 0.1rem;
+    }
+    #first h1,
+    #first i {
+        padding: 0.1rem 0.2rem 0.1rem 0.2rem;
+        margin: 0;
+        font-size: 24px;
+    }
+    #first h1 {
+        font-weight: 400;
+    }
+    #sign-up {
+        padding: 0.2rem;
+        gap: 1rem;
+    }
+    .sign-up-wrapper {
+        width: 100%;
+    }
+    .sign-up-wrapper h1 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .sign-up-wrapper i {
+        font-size: 1.5rem;
     }
 }
 
