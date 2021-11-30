@@ -120,7 +120,7 @@ nav ul.third {
     position: absolute;
     background-color: #fff;
     margin: 7%;
-    padding: 2.5rem;
+    /* padding: 2.5rem; */
     max-width: 30rem;
 }
 
@@ -155,6 +155,10 @@ nav ul.third {
 
 .icon-wrapper i {
     margin: 1rem;
+}
+
+.get-wrapper {
+    margin: 0 2.5rem 0 2.5rem;
 }
 
 .uber-paid-wrap h1 {
@@ -361,11 +365,12 @@ footer {
     background-color: #000;
     color: #fff;
     padding: 3rem;
+    gap: 3rem;
 }
 
 footer header {
     grid-area: header;
-    height: 7rem;
+    height: 6rem;
 }
 
 footer i {
@@ -387,14 +392,20 @@ footer a {
     border-bottom: 2px solid #fff;
     font-weight: 400;
     max-width: fit-content;
+    text-decoration: none;
 }
 
 footer a:hover {
     color: #afafaf;
+    text-decoration: underline;
+}
+
+* {
+    border: 1px solid red;
 }
 
 footer h4 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .company-title {
@@ -423,8 +434,8 @@ footer h4 {
 
 .english {
     grid-area: english;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* display: flex; */
+    /* grid-template-columns: repeat(2, 1fr); */
 }
 
 .appstores {
