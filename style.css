@@ -7,7 +7,7 @@ body {
 }
 
 :root {
-    --navfooter-font-size: 17px;
+    --navfooter-font-size: 16px;
     --primary-font-size: 36px;
 }
 
@@ -54,6 +54,38 @@ body {
     max-height: 2rem;
 }
 
+.wdn {
+    display: none;
+}
+
+.lb {
+    border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+    width: fit-content;
+}
+
+.tlb {
+    border-bottom: 5px solid #000;
+}
+
+.flow_underline {
+    position: relative;
+}
+
+.flow_underline::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: -2px;
+    transition: 0.4s;
+}
+
+.flow_underline:hover:after {
+    width: 100%;
+}
+
 
 /*==================Navbar================*/
 
@@ -79,10 +111,6 @@ body {
     min-width: fit-content;
 }
 
-.wdn {
-    display: none;
-}
-
 nav ul li:hover {
     background-color: #333333;
     border-radius: 1.5rem;
@@ -106,6 +134,10 @@ nav ul.third {
     padding: 0.5rem;
     min-width: 3.5rem;
     text-align: center;
+}
+
+.sign-up:hover {
+    background-color: #e4e0e0;
 }
 
 .uber {
@@ -231,11 +263,6 @@ nav ul.third {
     width: 90%;
 }
 
-.lb {
-    border-bottom: 1px solid rgba(51, 51, 51, 0.3);
-    width: fit-content;
-}
-
 .p-wrapper {
     justify-content: flex-start;
 }
@@ -261,6 +288,29 @@ nav ul.third {
 
 .uber-paid-wrapper img {
     width: auto;
+}
+
+
+/*=============About us==================*/
+
+#about-us {
+    margin: 5rem 0rem;
+    padding: 0 7% 0 7%;
+}
+
+#about-us a {
+    text-decoration: none;
+    color: #000;
+}
+
+#about-us h4 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 1rem 0 0 0;
+}
+
+#about-us p {
+    margin-bottom: 2rem;
 }
 
 
@@ -485,14 +535,14 @@ footer h4 {
     }
     #safety {
         margin: 0;
-        padding: 0 0.2rem 0 0.2rem;
+        padding: 0 0.5rem 0 0.5rem;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "safety-title" "img-first" "our" "with" "p-wrapper" "img-second" "setting" " the" " view";
     }
     .download-wrapper {
-        padding: 0.2rem;
+        padding: 0.5rem;
     }
     #download-app #first {
         width: 4rem;
@@ -510,7 +560,7 @@ footer h4 {
         font-weight: 400;
     }
     #sign-up {
-        padding: 0.2rem;
+        padding: 0.5rem;
         gap: 1rem;
     }
     .sign-up-wrapper {
@@ -528,10 +578,10 @@ footer h4 {
             grid-template-columns: 1fr;
             grid-template-rows: auto;
             grid-template-areas: "header" "company" "products" "global" "travel" "social-icons" "english" "appstores" "inc" "judicial";
-            padding: 0.2rem;
+            padding: 0.5rem;
         }
         .uber-paid-wrap {
-            padding: 0.2rem;
+            padding: 0.5rem;
             width: fit-content;
             font-size: 20px;
         }
@@ -539,7 +589,7 @@ footer h4 {
             font-size: 36px;
         }
         #safety {
-            padding: 0.2rem;
+            padding: 0.5rem;
         }
         .nav-container {
             justify-content: center;
@@ -548,11 +598,15 @@ footer h4 {
             gap: 0;
         }
         .sign-up {
-            padding: 0.4rem;
+            padding: 0.5rem;
             align-self: center;
         }
         .sign-up:hover {
             padding: 0.4rem;
+        }
+        #about-us {
+            display: grid;
+            gap: 2rem;
         }
     }
 }
