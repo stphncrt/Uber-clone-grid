@@ -1,6 +1,8 @@
 html,
 body {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px;
@@ -11,12 +13,18 @@ body {
     --primary-font-size: 36px;
 }
 
+.cursor {
+    cursor: pointer;
+}
+
 .nfs {
     font-size: var(--navfooter-font-size);
 }
 
 .tfs {
     font-size: 40px;
+    color: #333333;
+    font-weight: 500;
 }
 
 .ntfs {
@@ -32,16 +40,12 @@ body {
     flex-direction: row;
 }
 
-.fc {
+.flex-column {
     display: flex;
     flex-direction: column;
 }
 
-.dg {
-    display: grid;
-}
-
-.gs {
+.gap-small {
     gap: 1rem;
     margin: 0;
 }
@@ -69,6 +73,7 @@ body {
 
 .flow_underline {
     position: relative;
+    cursor: pointer;
 }
 
 .flow_underline::after {
@@ -122,6 +127,18 @@ nav ul li {
     margin: 0;
 }
 
+li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.li-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: baseline;
+}
+
 nav ul.third {
     margin-left: auto;
 }
@@ -144,6 +161,10 @@ nav ul.third {
     font-size: 24px;
 }
 
+.company {
+    align-items: baseline;
+}
+
 
 /*==================Get paid=================*/
 
@@ -152,11 +173,10 @@ nav ul.third {
     position: absolute;
     background-color: #fff;
     margin: 7%;
-    /* padding: 2.5rem; */
     max-width: 30rem;
 }
 
-.hdn img {
+.hidden img {
     width: 100%;
     margin-bottom: -0.5rem;
 }
@@ -295,7 +315,7 @@ nav ul.third {
 
 #about-us {
     margin: 5rem 0rem;
-    padding: 0 7% 0 7%;
+    padding: 0 7%;
 }
 
 #about-us a {
@@ -361,7 +381,7 @@ nav ul.third {
 .download {
     align-items: center;
     background-color: #fff;
-    padding: 0 2rem 0 2rem;
+    padding: 0 2rem;
     border: 1px solid rgba(51, 51, 51, 0.3);
 }
 
@@ -480,8 +500,6 @@ footer h4 {
 
 .english {
     grid-area: english;
-    /* display: flex; */
-    /* grid-template-columns: repeat(2, 1fr); */
 }
 
 .appstores {
@@ -500,6 +518,11 @@ footer h4 {
     grid-area: judicial;
     display: grid;
     grid-template-columns: 1fr 1.7fr 1.4fr;
+}
+
+.judicial a,
+.english p {
+    cursor: pointer;
 }
 
 @media (max-width: 1024px) {
@@ -521,7 +544,7 @@ footer h4 {
         margin: 0;
         padding: 0;
     }
-    .dn {
+    .displaynone {
         display: none;
     }
     .tfs {
@@ -535,7 +558,7 @@ footer h4 {
     }
     #safety {
         margin: 0;
-        padding: 0 0.5rem 0 0.5rem;
+        padding: 0 0.5rem;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -573,40 +596,41 @@ footer h4 {
     .sign-up-wrapper i {
         font-size: 1.5rem;
     }
-    @media (max-width: 600px) {
-        footer {
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            grid-template-areas: "header" "company" "products" "global" "travel" "social-icons" "english" "appstores" "inc" "judicial";
-            padding: 0.5rem;
-        }
-        .uber-paid-wrap {
-            padding: 0.5rem;
-            width: fit-content;
-            font-size: 20px;
-        }
-        .uber-paid-wrap h1 {
-            font-size: 36px;
-        }
-        #safety {
-            padding: 0.5rem;
-        }
-        .nav-container {
-            justify-content: center;
-        }
-        .third {
-            gap: 0;
-        }
-        .sign-up {
-            padding: 0.5rem;
-            align-self: center;
-        }
-        .sign-up:hover {
-            padding: 0.4rem;
-        }
-        #about-us {
-            display: grid;
-            gap: 2rem;
-        }
+}
+
+@media (max-width: 600px) {
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "header" "company" "products" "global" "travel" "social-icons" "english" "appstores" "inc" "judicial";
+        padding: 0.5rem;
+    }
+    .uber-paid-wrap {
+        padding: 0.5rem;
+        width: fit-content;
+        font-size: 20px;
+    }
+    .uber-paid-wrap h1 {
+        font-size: 36px;
+    }
+    #safety {
+        padding: 0.5rem;
+    }
+    .nav-container {
+        justify-content: center;
+    }
+    .third {
+        gap: 0;
+    }
+    .sign-up {
+        padding: 0.5rem;
+        align-self: center;
+    }
+    .sign-up:hover {
+        padding: 0.4rem;
+    }
+    #about-us {
+        display: grid;
+        gap: 2rem;
     }
 }
